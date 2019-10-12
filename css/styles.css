@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; 
+}
+
+html {
+    /* define what 1 rem is */
+    font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box; 
+}
+
+.col-1000,
+.col-3000,
+.col-5000 {
+  display: inline-block;
+  flex-direction: column;
+}
+
