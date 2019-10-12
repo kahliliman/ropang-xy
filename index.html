@@ -19,8 +19,8 @@
 	<section class="option">
 		<h2>Choose your ropang</h2>
 		<form action="" method="get" accept-charset="utf-8">
-			<input type="radio" name="roti" value="manis" id='opt-manis' onclick="opt_func()"> Ropang manis
-			<input type="radio" name="roti" value="asin" id='opt-asin' onclick="opt_func()">Ropang asin
+			<input type="radio" name="roti" value="manis" id='opt-manis' onclick="opt_calc()"> Ropang manis
+			<input type="radio" name="roti" value="asin" id='opt-asin' onclick="opt_calc()">Ropang asin
 		</form>
 	</section>
 
@@ -28,9 +28,9 @@
 	<section class="size">
 		<h2>Choose your size</h2>
 		<form action="" method="get" accept-charset="utf-8">
-			<input type="radio" name="size" value="kilo"> Kilo
-			<input type="radio" name="size" value="mega" checked> Mega
-			<input type="radio" name="size" value="Giga"> Giga
+			<input type="radio" name="size" value="kilo" id="size-kilo" onclick="size_calc()"> Kilo
+			<input type="radio" name="size" value="mega" id="size-mega" onclick="size_calc()" checked> Mega
+			<input type="radio" name="size" value="Giga" id="size-giga" onclick="size_calc()"> Giga
 		</form>		
 	</section>
 
@@ -39,24 +39,24 @@
 		<form action="" method="get" accept-charset="utf-8">
 
 			<!-- <div class="col-1000"> -->
-				<input type="checkbox" name="toppings" value="milo"> Milo 
-				<input type="checkbox" name="toppings" value="meses"> Meses 
-				<input type="checkbox" name="toppings" value="chocochip"> Chocochip 
-				<input type="checkbox" name="toppings" value="koko_krunch"> Koko Krunch				
+				<input type="checkbox" name="toppings" class="plus-1000" id="top-milo" value="milo" onclick="top_calc()"> Milo 
+				<input type="checkbox" name="toppings" class="plus-1000" id="top-meses" value="meses" onclick="top_calc()"> Meses 
+				<input type="checkbox" name="toppings" class="plus-1000" id="top-chocochip" value="chocochip" onclick="top_calc()"> Chocochip 
+				<input type="checkbox" name="toppings" class="plus-1000" id="top-koko-krunch" value="koko_krunch" onclick="top_calc()"> Koko Krunch				
 			<!-- </div> -->
 
 			<!-- <div class="col-3000"> -->
-				<input type="checkbox" name="toppings" value="green"> Green 
-				<input type="checkbox" name="toppings" value="boba"> Boba
-				<input type="checkbox" name="toppings" value="mozarella"> Mozarella
-				<input type="checkbox" name="toppings" value="cheddar"> Cheddar				
+				<input type="checkbox" name="toppings" class="plus-3000" id="top-green_tea" value="green_tea" onclick="top_calc()"> Green Tea
+				<input type="checkbox" name="toppings" class="plus-3000" id="top-boba" value="boba" onclick="top_calc()"> Boba
+				<input type="checkbox" name="toppings" class="plus-3000" id="top-mozarella" value="mozarella" onclick="top_calc()"> Mozarella
+				<input type="checkbox" name="toppings" class="plus-3000" id="top-cheddar" value="cheddar" onclick="top_calc()"> Cheddar				
 			<!-- </div> -->
 
 			<!-- <div class="col-5000"> -->
-				<input type="checkbox" name="toppings" value="tuna"> Tuna 
-				<input type="checkbox" name="toppings" value="ayam"> Ayam
-				<input type="checkbox" name="toppings" value="pepperoni"> Pepperoni
-				<input type="checkbox" name="toppings" value="kornet"> Kornet				
+				<input type="checkbox" name="toppings" class="plus-5000" id="top-tuna" value="tuna" onclick="top_calc()"> Tuna 
+				<input type="checkbox" name="toppings" class="plus-5000" id="top-ayam" value="ayam" onclick="top_calc()"> Ayam
+				<input type="checkbox" name="toppings" class="plus-5000" id="top-pepperoni" value="pepperoni" onclick="top_calc()"> Pepperoni
+				<input type="checkbox" name="toppings" class="plus-5000" id="top-kornet" value="kornet" onclick="top_calc()"> Kornet				
 			<!-- </div> -->
 
 		</form>		
