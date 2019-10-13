@@ -53,17 +53,11 @@ function size_calc() {
 
 function top_calc() {
 
-  	var plus_1000 = document.querySelector(".plus-1000");
-  	var plus_3000 = document.querySelector(".plus-2000");
-  	var plus_5000 = document.querySelector(".plus-3000");
+  	var top_milo = document.querySelector("#top-milo");
 
-  if (plus_1000.checked == true){
-  	top_price += 1000;
-  	} else if (plus_1000.checked == false){
-  	top_price -= 1000
-	}
+  	if (top_milo.checked == true){
+  		top_price = 1000;
+  	}
 
-  	console.log('top price =',top_price)
-  	console.log('price =',price)
 	return top_price
 } 
