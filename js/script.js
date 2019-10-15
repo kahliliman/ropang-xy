@@ -4,6 +4,11 @@ var base_price = 0
 var size_price = 0
 var top_price = 0
 var price = 0
+var col_1000_check = 0
+var col_3000_check = 0
+var col_5000_check = 0
+
+
 var total_price = document.querySelector('.total-price')
 
 total_price.textContent = price
@@ -15,16 +20,35 @@ function opt_calc() {
 
   if (opt_manis.checked == true){
     base_price = 15000;
-
-  } else if (opt_asin.checked == true) {
+    top_asin = document.querySelectorAll(".asin-only");
+    for (x of top_asin) {
+      x.disabled = true;}
+    top_manis = document.querySelectorAll(".manis-only");
+    for (x of top_manis) {
+      x.disabled = false;
+    }
+  }
+  else if (opt_asin.checked == true) {
     base_price = 20000;
+    top_asin = document.querySelectorAll(".asin-only");
+    for (x of top_asin) {
+      x.disabled = false;}
+    top_manis = document.querySelectorAll(".manis-only");
+    for (x of top_manis) {
+      x.disabled = true;
+    }
   }
   	console.log('base price =',base_price)
   	
-  	price = base_price + size_price
+    checked = document.querySelectorAll('input[type=checkbox]:checked')
+    for (x of checked) {
+      x.checked = false;}
+    top_price = 0
+
+  	price = base_price + size_price + top_price
   	total_price.textContent = price
-  	console.log('price =',price)
-	return base_price
+  	// console.log('price =',price)
+	return base_price, top_price
 
 	
 } 
@@ -45,19 +69,23 @@ function size_calc() {
   }
   	console.log('size price =',size_price)
 
-  	price = base_price + size_price
+  	price = base_price + size_price + top_price
   	total_price.textContent = price
-  	console.log('price =',price)
+  	// console.log('price =',price)
 	return size_price
 } 
 
 function top_calc() {
+  col_1000_check = document.querySelectorAll('.col-1000 input[type=checkbox]:checked').length
+  col_3000_check = document.querySelectorAll('.col-3000 input[type=checkbox]:checked').length  
+  col_5000_check = document.querySelectorAll('.col-5000 input[type=checkbox]:checked').length
+  top_price = col_1000_check * 1000 + col_3000_check * 3000 + col_5000_check * 5000
 
-  	var top_milo = document.querySelector("#top-milo");
+  console.log('topping price =',top_price)
 
-  	if (top_milo.checked == true){
-  		top_price = 1000;
-  	}
+  price = base_price + size_price + top_price
+  total_price.textContent = price
 
-	return top_price
-} 
+  return col_1000_check,col_3000_check,col_5000_check,top_price
+
+}
