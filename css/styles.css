@@ -29,10 +29,52 @@ h2 {
 	margin-bottom: 2rem;
 }
 
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	margin-bottom: 1.6rem;
+}
+
 .container {
 	width: 80vw;
 	margin:  auto;
 }
+
+.rupiah:before {
+	content:'Rp ';
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	width: 30rem;
+  	margin-right: 4rem;
+  	border-radius: 1rem;
+  	overflow: hidden;
+}
+
+.card:hover {
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  	cursor: pointer;
+}
+
+.container-card {
+  	padding: 2rem 2rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.card-input-element {
+	display: none;
+}
+
+.card-input-element:checked + .card {
+     box-shadow: 0 0 0.2rem 0.2rem #1089ff;
+ }
 
 section {
 	margin-top: 2rem;
@@ -42,6 +84,10 @@ section {
 .subtitle {
 	font-size: 1.8rem;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.option-form {
+	display: flex;
 }
 
 .toppings-form {

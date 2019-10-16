@@ -18,11 +18,40 @@
 		<span class="subtitle"><p>Create it, your way</p></span>
 	</section>
 
+	<section class="price">
+		<h2 style="color: gray"><i>Total Price (for testing)</i></h2>
+		<i style="color: gray"><span class="total-price rupiah"></span></i>
+		
+	</section>
+
 	<section class="option">
 		<h2>Choose your ropang</h2>
-		<form action="" method="get" accept-charset="utf-8">
-			<input type="radio" name="roti" value="manis" id='opt-manis' onclick="opt_calc()"> Ropang manis
-			<input type="radio" name="roti" value="asin" id='opt-asin' onclick="opt_calc()">Ropang asin
+
+		<form class="option-form" action="" method="get" accept-charset="utf-8">
+			
+			<label>
+				<input type="radio" class="card-input-element" name="roti" value="manis" id='opt-manis' onclick="opt_calc()"> 
+				<div class="card">
+				  <img src="./img/roti-manis.jpg" alt="Avatar" class="card-img-top" style="width:30rem">
+				  <div class="container-card">
+				    <h4><b>Ropang manis</b></h4>
+				    <p>Rp 15.000</p>
+				  </div>
+				</div> 
+			</label>
+		
+			<label>
+				<input type="radio" class="card-input-element" name="roti" value="asin" id='opt-asin' onclick="opt_calc()">
+				<div class="card">
+				  <img src="./img/roti-asin.jpg" alt="Avatar" class="card-img-top" style="width:30rem">
+				  <div class="container-card">
+				    <h4><b>Ropang asin</b></h4>
+				    <p>Rp 20.000</p>
+				  </div>
+				</div> 
+			</label>
+
+
 		</form>
 	</section>
 
