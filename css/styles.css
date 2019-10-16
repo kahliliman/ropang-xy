@@ -13,12 +13,48 @@ html {
 
 body {
 	box-sizing: border-box; 
+	font-family: 'Roboto', 'Open Sans', 'Poppins', sans-serif;
+	font-size: 2rem;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 4.8rem;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.4rem;
+	margin-bottom: 2rem;
+}
+
+.container {
+	width: 80vw;
+	margin:  auto;
+}
+
+section {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+
+.subtitle {
+	font-size: 1.8rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.toppings-form {
+	display: flex
 }
 
 .col-1000,
 .col-3000,
 .col-5000 {
-  display: inline-block;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
+ul li {
+	list-style: none;
+}
