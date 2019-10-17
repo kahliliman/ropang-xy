@@ -40,7 +40,7 @@ h4 {
 	margin:  auto;
 }
 
-.rupiah:before {
+.rupiah::before {
 	content:'Rp ';
 }
 
@@ -93,7 +93,7 @@ h4 {
 }
 
 .card-input-element:checked + .card {
-     box-shadow: 0 0 0.2rem 0.2rem #1089ff;
+     box-shadow: 0 0 0.3rem 0.3rem orangered;
  }
 
 .card-input-element-size {
@@ -101,7 +101,7 @@ h4 {
 }
 
 .card-input-element-size:checked + .card-size {
-     box-shadow: 0 0 0.2rem 0.2rem #1089ff;
+     box-shadow: 0 0 0.3rem 0.3rem orangered;
  }
 
 .h4-size {
@@ -146,4 +146,12 @@ section {
 
 ul li {
 	list-style: none;
+	margin-bottom: 2rem;
+	margin-right: 3rem;
+}
+
+.check-item-name {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.4rem;
+	margin-left: 2rem;
 }

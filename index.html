@@ -13,6 +13,7 @@
 </head>
 <body>
 	<div class="container">
+
 	<section class="header">
 		<span><h1>RoppanXY</h1></span>
 		<span class="subtitle"><p>Create it, your way</p></span>
@@ -21,7 +22,6 @@
 	<section class="price">
 		<h2 style="color: gray"><i>Total Price (for testing)</i></h2>
 		<i style="color: gray"><span class="total-price rupiah"></span></i>
-		
 	</section>
 
 	<section class="option">
@@ -102,16 +102,30 @@
 			<div>
 				<ul class="col-1000">
 					<li>
-						<input type="checkbox" name="toppings" class="manis-only" id="top-milo" value="milo" onclick="top_calc()"> Milo				
+						<label>
+						<input type="checkbox" name="toppings" class="manis-only" id="top-milo" value="milo" onclick="top_calc()"> 		
+						<span class="check-item-name">Milo</span>				
+						</label>
+						
 					</li>
 					<li>
-						<input type="checkbox" name="toppings" class="manis-only" id="top-meses" value="meses" onclick="top_calc()"> Meses 
-					</li>
+						<label>
+						<input type="checkbox" name="toppings" class="manis-only" id="top-meses" value="meses" onclick="top_calc()"> 
+						<span class="check-item-name">Meses</span>	 
+					</li>	
+						</label>
 					<li>
-						<input type="checkbox" name="toppings" class="manis-only" id="top-chocochip" value="chocochip" onclick="top_calc()"> Chocochip 
-					</li>
+						<label>
+						<input type="checkbox" name="toppings" class="manis-only" id="top-chocochip" value="chocochip" onclick="top_calc()"> <span class="check-item-name">Chocochip</span> 
+					</li>	
+						</label>
 					<li>
-						<input type="checkbox" name="toppings" class="manis-only" id="top-koko-krunch" value="koko_krunch" onclick="top_calc()"> Koko Krunch						
+						<label>
+						<input type="checkbox" name="toppings" class="manis-only" id="top-koko-krunch" value="koko_krunch" onclick="top_calc()">
+						<span class="check-item-name">
+						Koko Krunch								
+						</label>
+						</span> 
 					</li>
 				</ul>
 			</div>
@@ -119,16 +133,36 @@
 			<div>
 				<ul class="col-3000">
 					<li>
-						<input type="checkbox" name="toppings" class="manis-only" id="top-green_tea" value="green_tea" onclick="top_calc()"> Green Tea
+						<label>
+						<input type="checkbox" name="toppings" class="manis-only" id="top-green_tea" value="green_tea" onclick="top_calc()">
+						<span class="check-item-name">
+						Green Tea	
+						</span> 	
+						</label>
 					</li>
 					<li>
-						<input type="checkbox" name="toppings" class="manis-only" id="top-boba" value="boba" onclick="top_calc()"> Boba
+						<label>
+						<input type="checkbox" name="toppings" class="manis-only" id="top-boba" value="boba" onclick="top_calc()">
+						<span class="check-item-name">
+						Boba	
+						</span> 	
+						</label>
 					</li>
 					<li>
-						<input type="checkbox" name="toppings" id="top-mozarella" value="mozarella" onclick="top_calc()"> Mozarella
+						<label>
+						<input type="checkbox" name="toppings" id="top-mozarella" value="mozarella" onclick="top_calc()">
+						<span class="check-item-name">
+						Mozarella	
+						</span> 	
+						</label>
 					</li>
 					<li>
-						<input type="checkbox" name="toppings" id="top-cheddar" value="cheddar" onclick="top_calc()"> Cheddar				
+						<label>
+						<input type="checkbox" name="toppings" id="top-cheddar" value="cheddar" onclick="top_calc()">
+						<span class="check-item-name">
+						Cheddar					
+						</span> 	
+						</label>
 					</li>
 				</ul>
 			</div>
@@ -136,16 +170,44 @@
 			<div>
 				<ul class="col-5000">
 					<li>
-						<input type="checkbox" name="toppings" class="asin-only" id="top-tuna" value="tuna" onclick="top_calc()"> Tuna 
+						<label>
+						<input type="checkbox" name="toppings" class="asin-only" id="top-tuna" value="tuna" onclick="top_calc()">
+						<span class="check-item-name">
+						Tuna 	
+						</span> 
+							
+						</label>
+						
 					</li>
 					<li>
-						<input type="checkbox" name="toppings" class="asin-only" id="top-ayam" value="ayam" onclick="top_calc()"> Ayam
+						<label>
+						<input type="checkbox" name="toppings" class="asin-only" id="top-ayam" value="ayam" onclick="top_calc()">
+						<span class="check-item-name">
+						Ayam	
+						</span> 
+							
+						</label>
+						
 					</li>
 					<li>
-						<input type="checkbox" name="toppings" class="asin-only" id="top-pepperoni" value="pepperoni" onclick="top_calc()"> Pepperoni
+						<label>
+						<input type="checkbox" name="toppings" class="asin-only" id="top-pepperoni" value="pepperoni" onclick="top_calc()">
+						<span class="check-item-name">
+						Pepperoni	
+						</span> 
+							
+						</label>
+						
 					</li>
 					<li>
-						<input type="checkbox" name="toppings" class="asin-only" id="top-kornet" value="kornet" onclick="top_calc()"> Kornet	
+						<label>
+						<input type="checkbox" name="toppings" class="asin-only" id="top-kornet" value="kornet" onclick="top_calc()">
+						<span class="check-item-name">
+						Kornet		
+						</span> 
+							
+						</label>
+						
 					</li>
 				</ul>
 			</div>
@@ -155,9 +217,10 @@
 
 	<section class="price">
 		<h2>Total Price</h2>
-		Rp <span class="total-price"></span>
+		<span class="total-price rupiah"></span>
 		
 	</section>
+
 	</div>
 	<script src="./js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
