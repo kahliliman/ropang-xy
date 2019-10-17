@@ -58,9 +58,29 @@ h4 {
   	cursor: pointer;
 }
 
+.card-size {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	width: 15rem;
+  	margin-right: 4rem;
+  	border-radius: 1rem;
+}
+
+.card-size:hover {
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  	cursor: pointer;
+}
+
 .container-card {
   	padding: 2rem 2rem;
 }
+
+.container-card-size {
+  	/* padding: 2rem 2rem; */
+  	text-align: center;
+  	padding: 2rem 0 2rem 0;
+
+  }
 
 .card-img-top {
     width: 100%;
@@ -76,6 +96,25 @@ h4 {
      box-shadow: 0 0 0.2rem 0.2rem #1089ff;
  }
 
+.card-input-element-size {
+	display: none;
+}
+
+.card-input-element-size:checked + .card-size {
+     box-shadow: 0 0 0.2rem 0.2rem #1089ff;
+ }
+
+.h4-size {
+	font-weight: 300;
+	font-size: 2.4rem;
+	color: teal;
+}
+
+.size-price {
+	font-size: 1.6rem;
+	color: gray;
+}
+
 section {
 	margin-top: 2rem;
 	margin-bottom: 4rem;
@@ -87,6 +126,10 @@ section {
 }
 
 .option-form {
+	display: flex;
+}
+
+.size-form {
 	display: flex;
 }
 
