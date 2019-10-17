@@ -11,7 +11,7 @@ var col_5000_check = 0
 
 var total_price = document.querySelector('.total-price')
 
-total_price.textContent = CurrencyFormatted(price)
+total_price.textContent = numberWithCommas(price)
 
 function opt_calc() {
   	var opt_price = 0
@@ -46,7 +46,7 @@ function opt_calc() {
     top_price = 0
 
   	price = base_price + size_price + top_price
-  	total_price.textContent = CurrencyFormatted(price)
+  	total_price.textContent = numberWithCommas(price)
   	// console.log('price =',price)
 	return base_price, top_price
 
@@ -70,7 +70,7 @@ function size_calc() {
   	console.log('size price =',size_price)
 
   	price = base_price + size_price + top_price
-  	total_price.textContent = CurrencyFormatted(price)
+  	total_price.textContent = numberWithCommas(price)
   	// console.log('price =',price)
 	return size_price
 } 
@@ -84,7 +84,7 @@ function top_calc() {
   console.log('topping price =',top_price)
 
   price = base_price + size_price + top_price
-  total_price.textContent = CurrencyFormatted(price)
+  total_price.textContent = numberWithCommas(price) 
 
   return col_1000_check,col_3000_check,col_5000_check,top_price
 
@@ -105,4 +105,8 @@ function CurrencyFormatted(amount) {
   if(s.indexOf('.') == (s.length - 2)) { s += '0'; }
   s = minus + s;
   return s;
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }

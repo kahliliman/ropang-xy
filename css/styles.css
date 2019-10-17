@@ -44,8 +44,15 @@ h4 {
 	content:'Rp ';
 }
 
+.total-price {
+	font-weight: 300;
+	font-family: "Poppins", sans-serif;
+	font-size: 4rem;
+	color: teal;
+}
+
 .card {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 .4rem .8rem 0 rgba(0,0,0,0.2);
   	transition: 0.3s;
   	width: 30rem;
   	margin-right: 4rem;
@@ -54,12 +61,12 @@ h4 {
 }
 
 .card:hover {
-  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  	box-shadow: 0 .8rem 1.6rem 0 rgba(0,0,0,0.2);
   	cursor: pointer;
 }
 
 .card-size {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 .4rem .8rem 0 rgba(0,0,0,0.2);
   	transition: 0.3s;
   	width: 15rem;
   	margin-right: 4rem;
@@ -67,7 +74,7 @@ h4 {
 }
 
 .card-size:hover {
-  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  	box-shadow: 0 .8rem 1.6rem 0 rgba(0,0,0,0.2);
   	cursor: pointer;
 }
 
@@ -160,10 +167,10 @@ ul li {
 .container-checkbox {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 3.5rem;
+  margin-bottom: 1.2rem;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 2.2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -224,3 +231,19 @@ ul li {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 } 
+
+input[type=checkbox][disabled]{
+  outline:.1rem solid red;
+}
+
+.container-checkbox input[type=checkbox][disabled] ~ .checkmark {
+	background: #bbb;
+}
+
+.container-checkbox:hover input[type=checkbox][disabled] ~ .checkmark {
+	background-color: #bbb;
+}
+
+.container-checkbox input[type=checkbox][disabled] ~ .check-item-name {
+	color: #bbb;
+}
